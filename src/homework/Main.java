@@ -1,8 +1,10 @@
+package homework;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Calculator2 클래스의 객체 생성
+        // homework.Main.Calculator2 클래스의 객체 생성
         Calculator2 cal = new Calculator2();
 
         Scanner sc = new Scanner(System.in);
@@ -35,5 +37,36 @@ public class Main {
 
 
         }
+    }
+
+    public static class Calculator2 {
+        private int result;
+        //  더하기 기능 부여: 두 정수를 더하는 메서드
+        public int sum(int a, int b) {
+
+            return  a + b;
+
+            // 두 정수를 더하는 메서드
+
+        }
+        public int subtract (int a,int b){
+
+            return  a - b;
+            // 두 정수를 빼는 메서드
+
+        }
+        public int multiply (int a,int b){
+            return a= a * b;
+            // 두 정수를 곱하는 메서드
+
+
+        }
+        public int divide (int a,int b) {
+            if (b == 0) { throw new IllegalArgumentException("0 으로 나눌 수 없습니다.");
+                }   // 0을 입력하면 나눌 수 없다고 예외처리
+
+            return a= a / b;
+        }
+
     }
 }
